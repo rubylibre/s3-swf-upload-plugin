@@ -8,10 +8,6 @@ module S3SwfUpload
       S3SwfUpload::S3Config.load_config
     end
     
-    rake_tasks do
-      load "s3_swf_upload/railties/tasks/s3_swf_upload.rake"
-    end
-    
     generators do
       require "s3_swf_upload/railties/generators/uploader/uploader_generator"
     end
